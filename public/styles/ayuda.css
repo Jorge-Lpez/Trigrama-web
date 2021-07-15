@@ -1,0 +1,52 @@
+.ayuda{
+    margin: 20px 0;
+}
+
+.ayuda-conte{
+    display: flex;
+    align-items: center;
+}
+
+.ayuda-info{
+    flex: 1;
+    padding: 0 40px;
+}
+
+.imagen-ayuda{
+    flex: 1;
+}
+
+.ayuda-info h2{
+    font: var(--headline4);
+}
+
+.ayuda-info p{
+    padding: 10px 0;
+    font: var(--body1);
+}
+
+.ayuda-info button{
+    padding: 10px;
+    border: none;
+    background-color: var(--oro);
+    border: 4px solid var(--oro);
+    font: var(--button);
+}
+
+@media screen and (max-width: 768px){
+    .ayuda-conte{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .ayuda-info{
+        padding: 0;
+    }
+
+    .ayuda-info h2{
+        font: var(--headline5);
+    }
+    .ayuda-info p{
+        font: var(--body2);
+    }
+}

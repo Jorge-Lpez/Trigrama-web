@@ -1,0 +1,48 @@
+.banner-informativo{
+    margin: 20px 0;
+    background: url("../img/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+
+.banner-informativo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    row-gap: 10px;
+    height: 100%;
+}
+
+.banner-informativo div button{
+    padding: 10px;
+    border: none;
+    background-color: var(--oro);
+    border: 4px solid var(--oro);
+    font: var(--button);
+}
+
+.banner-informativo div button:hover{
+    background: none;
+    color: crimson;
+}
+
+.banner-informativo div h3{
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    max-width: 500px;
+    padding: 10px;
+    font: var(--headline5);
+}
+
+.banner-informativo div h3 span{
+    font: var(--body1);
+}
+
+@media screen and (max-width: 660px){
+    .banner-informativo div h3{
+        /*font: var(--body1);*/
+    }
+}

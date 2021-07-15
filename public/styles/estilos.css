@@ -1,4 +1,9 @@
 @import "./header.css";
+@import "./banner.css";
+@import "./footer.css";
+@import "./servicios.css";
+@import "./banner-informativo.css";
+@import "./ayuda.css";
 
 :root{
     /*Variables letras*/
@@ -34,6 +39,9 @@ body{
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+}
 
 /*Estilos flex ox para que el footer siempre este abajo*/
 .pagina{
@@ -54,5 +62,5 @@ body{
 }
 
 .wrapper{
-    padding: 20px;
+    padding: 0 20px;
 }

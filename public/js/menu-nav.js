@@ -1,5 +1,5 @@
 const btnmovil = document.querySelector(".btn-movil");
-const navmenu = document.querySelector(".nav-menu");
+const navmenu = document.querySelector(".ul-nav");
 
 myApp();
 

@@ -1,0 +1,47 @@
+.servicios{
+
+}
+
+.servicios h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font: var(--headline4);
+}
+
+.card{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.card .card-items{
+    border: 2px solid #eee;
+    padding: 20px;
+    width: calc( 30% - 10px);
+}
+
+.card-items h3{
+    padding: 10px 0;
+    font: var(--headline5);
+}
+
+.card-items p{
+    padding: 10px 0;
+    font: var(--body1);
+}
+
+@media screen and (max-width: 1024px){
+    .card .card-items{
+        width: calc( 50% - 10px);
+    }
+}
+
+@media screen and (max-width: 660px){
+    .card .card-items{
+        width: 100%;
+    }
+}

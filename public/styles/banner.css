@@ -1,0 +1,32 @@
+.banner{
+    background: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: var(--white);
+}
+
+.banner h1{
+    padding: 5px 20px;
+    font: var(--headline2);
+}
+
+.banner p{
+    padding: 5px 20px;
+    font: var(--headline5);
+}
+
+@media screen and (max-width: 768px){
+    .banner h1{
+        font: var(--headline4);
+    }
+
+    .banner p{
+        font: var(--body1);
+    }
+}
