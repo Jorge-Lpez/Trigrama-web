@@ -1,0 +1,58 @@
+@import "./header.css";
+
+:root{
+    /*Variables letras*/
+    --font-base: 'Poppins', sans-serif;
+    --headline1: 700 95px/154px var(--font-base);
+    --headline2: 700 59px/96px var(--font-base);
+    --headline3: 700 48px/78px var(--font-base);
+    --headline4: 700 34px/55px var(--font-base);
+    --headline5: 700 24px/39px var(--font-base);
+    --body1: 400 16px/26px var(--font-base);
+    --body2: 400 14px/23px var(--font-base);
+    --button: 700 14px/23px var(--font-base);
+    --caption: 400 12px/20px var(--font-base);
+
+    /*Variables colores*/
+    --black: black;
+    --white: white;
+    --oro: #F8D847;
+    --azul: #0A374A;
+    --verde: #2FA048; 
+    --gradient-principal: linear-gradient(90deg, rgba(1,0,13,1) 0%, rgba(10,55,74,1) 25%, rgba(248,216,71,1) 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Estilos flex ox para que el footer siempre este abajo*/
+.pagina{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cuerpo{
+    flex: 1;
+}
+
+
+/*Estilo para contenedor*/
+.contenedor{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    padding: 20px;
+}
