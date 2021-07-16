@@ -4,6 +4,7 @@
 @import "./servicios.css";
 @import "./banner-informativo.css";
 @import "./ayuda.css";
+@import "./contactanos.css";
 
 :root{
     /*Variables letras*/
@@ -63,4 +64,8 @@ img{
 
 .wrapper{
     padding: 0 20px;
+}
+
+.section-margin{
+    margin-top: 100px;
 }

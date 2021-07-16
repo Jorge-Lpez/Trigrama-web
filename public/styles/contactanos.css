@@ -1,0 +1,162 @@
+
+.title{
+    text-align: center;
+    font: var(--headline3);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.title::before{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 200px;
+    background-color: black;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.title::after{
+    position: absolute;
+    content: "formulario";
+    font: var(--body1);
+    text-transform: uppercase;
+    background-color: white;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 5px;
+}
+
+.formulario p{
+    text-align: center;
+    padding: 10px;
+    font: var(--headline5);
+}
+
+.formulario-items{
+    display: flex;
+}
+
+.formulario-items form{
+    flex: 1;
+}
+
+.formulario-items .imagen-formulario{
+    flex: 1;
+}
+
+.formulario-items form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-items form div input,
+.formulario-items form div select,
+.formulario-items form div textarea{
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 70%;
+    outline: none;
+}
+
+.formulario-items form div label{
+    font: var(--body1);
+    padding: 8px 0;
+    margin-left: 10px;
+}
+
+.formulario-items form input[type="submit"]{
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    margin: 20px 0;
+    width: 70%;
+}
+
+/*Terminos y condiciones*/
+
+.terminos{
+    margin-bottom: 20px;
+}
+
+.terminos h3{
+    text-align: center;
+    font: var(--headline5);
+}
+
+.terminos p{
+    text-align: left;
+    font: var(--body1);
+}
+
+.card-iconos{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.card-iconos .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #eee;
+}
+
+.card-iconos .items i svg{
+    width: 60px;
+    height: 60px;
+    color: blue;
+}
+
+
+@media screen and (max-width: 980px) {
+    .formulario-items form div input,
+    .formulario-items form div select,
+    .formulario-items form div textarea{
+        width: 90%;
+    }
+    .formulario-items form input[type="submit"]{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .formulario-items{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .imagen-formulario{
+        margin-bottom: 10px;
+    }
+    .formulario-items form div input,
+    .formulario-items form div select,
+    .formulario-items form div textarea{
+        width: 100%;
+    }
+    .formulario-items form input[type="submit"]{
+        width: 100%;
+    }
+
+    .title{
+        font: var(--headline5);
+        padding-bottom: 10px;
+    }
+
+    .formulario p{
+        font: var(--body1);
+    }
+}
+
+@media screen and (max-width: 560px){
+    .card-iconos{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}

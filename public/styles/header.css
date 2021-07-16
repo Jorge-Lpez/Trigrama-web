@@ -3,6 +3,7 @@
     height: 100px;
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 
 .cont-header{
@@ -43,6 +44,10 @@
     text-decoration: none;
     padding: 5px;
     font: var(--body1);
+}
+
+.cont-header .nav-menu ul li a.fijo{
+    color: crimson;
 }
 
 .cont-header .nav-menu ul li a:hover{
