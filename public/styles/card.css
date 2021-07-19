@@ -1,0 +1,68 @@
+.card{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.card .card-items{
+    border: 2px solid #eee;
+    width: calc( 30% - 10px);
+}
+
+.card-items h3{
+    padding: 20px;
+    font: var(--headline5);
+}
+
+.card-items p{
+    padding: 20px;
+    font: var(--body1);
+}
+
+
+/*Ediccion card en servicios*/
+.button{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font: var(--button)
+}
+
+.button:hover{
+    background: none;
+    color: var(--black);
+}
+
+.imagen-card{
+    height: 300px;
+}
+
+.imagen-card img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-items ul{
+    margin-left: 40px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .card .card-items{
+        width: calc( 50% - 10px);
+    }
+}
+
+@media screen and (max-width: 660px){
+    .card .card-items{
+        width: 100%;
+    }
+}

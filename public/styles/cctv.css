@@ -1,0 +1,55 @@
+#camaras h2{
+    padding: 10px 0;
+    font: var(--headline4);
+    text-align: center;
+}
+
+.camara-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img-camara{
+    flex: 1;
+}
+.contenido-flex{
+    flex: 1;
+    padding: 10px;
+}
+
+.contenido-flex h3{
+    font: var(--headline5);
+    padding: 10px 0;
+}
+
+.contenido-flex p{
+    font: vaR(--body1);
+    padding: 10px 0;
+}
+
+.contenido-flex ul{
+    margin-left: 40px;
+    font: var(--body1);
+}
+
+@media screen and (max-width: 760px){
+
+    #camaras h2{
+        font: var(--headline5);
+    }
+
+    .camara-flex{
+        flex-direction: column;
+    }
+    .img-camara{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .img-camara{
+        width: 100%;
+    }
+}

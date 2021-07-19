@@ -5,6 +5,10 @@
 @import "./banner-informativo.css";
 @import "./ayuda.css";
 @import "./contactanos.css";
+@import "./slider.css";
+@import "./card.css";
+@import "./cctv.css";
+@import "./computadoras.css";
 
 :root{
     /*Variables letras*/
@@ -14,6 +18,7 @@
     --headline3: 700 48px/78px var(--font-base);
     --headline4: 700 34px/55px var(--font-base);
     --headline5: 700 24px/39px var(--font-base);
+    --headline5: 700 18px/29px var(--font-base);
     --body1: 400 16px/26px var(--font-base);
     --body2: 400 14px/23px var(--font-base);
     --button: 700 14px/23px var(--font-base);

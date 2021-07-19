@@ -138,7 +138,7 @@
     .formulario-items form div input,
     .formulario-items form div select,
     .formulario-items form div textarea{
-        width: 100%;
+        width: 100%; 
     }
     .formulario-items form input[type="submit"]{
         width: 100%;
