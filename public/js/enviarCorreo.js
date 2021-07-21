@@ -43,6 +43,11 @@ async function submitEnviar(e){
     // Validar que todos los campos esten llenos 
     //console.log(Object.values(datos));
     if( !(Object.values( datos ).every( variable => variable != ""))  ){
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Todos los campos son obligatorios!'
+        })
         return;
     }
 
