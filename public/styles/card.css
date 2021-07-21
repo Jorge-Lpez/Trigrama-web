@@ -24,23 +24,6 @@
 
 
 /*Ediccion card en servicios*/
-.button{
-    margin: 20px;
-    padding: 10px;
-    border: 2px solid var(--black);
-    background-color: var(--black);
-    color: white;
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font: var(--button)
-}
-
-.button:hover{
-    background: none;
-    color: var(--black);
-}
-
 .imagen-card{
     height: 300px;
 }

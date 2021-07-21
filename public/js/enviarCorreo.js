@@ -59,7 +59,8 @@ async function submitEnviar(e){
             confirmButtonText: `Aceptar`
         });
         // Enviar http://localhost:4000/
-        const res = await axios.post("https://trigrama-server.herokuapp.com/correo", datos);
+        // https://trigrama-server.herokuapp.com/correo
+        const res = await axios.post("http://localhost:4000/correo", datos);
     } catch (error) {
         console.log(error);
     }
@@ -69,7 +70,7 @@ async function submitEnviar(e){
     //Limpiar objeto de datos
     LimpiarObjeto();
     //Enviar a pagina principal
-    window.location.href="/";
+    //window.location.href="/";
 }
 
 

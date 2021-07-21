@@ -15,32 +15,61 @@
     width: 100%;
 }
 
-/* Extra
+/*Extra*/
 .publicidad{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: black;
+    font: var(--body1);
+    background-color:rgba( 208, 211, 29, .8);
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 20px;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
 }
 
-.contenido{
-    background-color: rgba(0,0,0,.5);
-    padding: 10px;
-    color: white;
+.publicidad >*{
+    padding:10px;
 }
 
-Fin extra*/
+/*Fin extra*/
 
 .slider-img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+.primera{
+    background: url("../img/internet.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.segunda{
+    background: url("../img/camara.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tercera{
+    background: url("../img/programar.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cuarta{
+    background: url("../img/redes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Sin cambios*/
 
 .slider-btn{
     position: absolute;
@@ -67,4 +96,16 @@ Fin extra*/
 
 .slider-btn-left{
     left: 10px;
+}
+
+@media screen and (max-width: 660px){
+    .publicidad{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .publicidad{
+        width: 150px;
+    }
 }

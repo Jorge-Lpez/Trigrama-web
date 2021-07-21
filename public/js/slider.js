@@ -14,9 +14,9 @@ function myApp(){
     btnright.addEventListener("click", Next);
     btnleft.addEventListener("click", before);
 
-    setInterval(() => {
+    /*setInterval(() => {
         Next();
-    }, 8000);
+    }, 8000);*/
 }
 
 function Next(){
@@ -32,6 +32,8 @@ function Next(){
 }
 
 function before(){
+    let sliderSection = document.querySelectorAll(".slider-section");
+    console.log(sliderSection);
     let sliderSectionLast = sliderSection[ sliderSection.length -1 ];
     slider.style.marginLeft = "0%";
     slider.style.transition ="all 0.5s";

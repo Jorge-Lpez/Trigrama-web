@@ -25,14 +25,6 @@
     font: var(--body1);
 }
 
-.ayuda-info button{
-    padding: 10px;
-    border: none;
-    background-color: var(--oro);
-    border: 4px solid var(--oro);
-    font: var(--button);
-}
-
 @media screen and (max-width: 768px){
     .ayuda-conte{
         flex-direction: column;
