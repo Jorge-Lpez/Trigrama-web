@@ -54,7 +54,7 @@ async function submitEnviar(e){
             confirmButtonText: `Aceptar`
         });
         // Enviar http://localhost:4000/
-        const res = await axios.post("http://localhost:4000/correo", datos);
+        const res = await axios.post("https://trigrama-server.herokuapp.com/correo", datos);
     } catch (error) {
         console.log(error);
     }
